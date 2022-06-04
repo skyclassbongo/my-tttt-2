@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<!--<h1 style="text-align:center">WELCOME TO OUR OFFICES</h1><br><br><br>-->
+<div id="justify">
+    <H2>OFFICES AND VENUE</H2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for office.." title="Type in a name">
+<ul id="myUL">
+    <li><a href="a.html"><B>BLOCK A:</B>
+        Floor G: Room A01 – A30 <BR>c
+        Floor F1: Room A101- A130
+    </a></li>
+
+    <li><a href="B.html"><B>BLOCK B:</B>
+        Floor G: Room B001-B020<BR>
+        Floor 1: Room B101– B120<BR>
+        Floor 2: Room B201 - B208<BR>
+    </a></li>
+    <li><a href="C.html"><B>BLOCK C:</B>
+        Floor G: Room C01-C08
+    </a></li>
+    <li><a href="D.html"><B>BLOCK D:</B>
+        Floor G: Room D01 – D25
+    </a></li>
+    <li><a href="cafeteria.html"><B>CAFETERIA</B></a></li>
+    <li><a href="hostel.html"><B>UDSM KIJITONYAMA HOSTEL:</B>
+        Floor G: Room 001 - 040<BR>
+        FLOOR 1: Room 041 - 080<BR>
+        FLOOR 2: Room 081 - 120</a></li>
+    <li><a href="court.html"><B>TENNES COURT</B></a></li>
+    <li><a href="stationary.html"><B>COIC STATIONARY</B></a></li>
+</ul>
+</div>
+<script>
+var UL = document.getElementById("myUL");
+// hilde the list by default
+UL.style.display = "none";
+
+var searchBox = document.getElementById("myInput");
+
+// show the list when the input receive focus
+searchBox.addEventListener("focus",  function(){
+    // UL.style.display = "block";
+});
+
+
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    }
+
+    // This is when you want to find words that start the search string
+    /*if (a.innerHTML.toUpperCase().startsWith(filter)) {
+        li[i].style.display = "";
+    } else {
+        li[i].style.display = "none";
+    }*/
+    }
+}
+</script>
+
+</body>
+</html>

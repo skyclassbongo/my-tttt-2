@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">COICT NAVIGATION SYSTEM</string>
+    <string name="office_1">BLOCK A</string>
+    <string name="office_2">BLOCK B</string>
+    <string name="office_3">BLOCK C</string>
+    <string name="office_4">BLOCK D</string>
+    <string name="office_5">CAFTERIA</string>
+    <string name="office_6">KIJITONYAMA HOSTEL</string>
+    <string name="office_7">TENNESE COURT</string>
+    <string name="office_8">COIC STATIONARY</string>
+    <string name="b1">MAP LIST (VIEW)</string>
+    <string name="bt1">MAP</string>
+    <string name="bt3">ABOUT US</string>
+    <string name="bt2">FEEDBACK</string>
+    <string name="bt4">OFFICES</string>
+    <string name="todo">TODO</string>
+    <string name="coict">COICT NAVIGATION SYSTEM</string>
+    <string name="of">WELCOME TO OUR OFFICES</string>
+    <string name="textview">We are here to help you to reach us easily. We are happy to see you here.We made this App to help you to navigate to our offices digitaly</string>
+    <string name="email">Finished sending email...</string>
+</resources>

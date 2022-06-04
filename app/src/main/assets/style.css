@@ -1,0 +1,51 @@
+p{
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: left;
+    font-size: 100%;
+}#justify ol {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: justify;}
+h1{
+    font-size: 100%;
+    text-align: center;
+    max-width: 70%;
+}
+#justify ul {
+    margin: 0 auto;
+    max-width: 70%;
+    text-align: justify;
+}
+#justify h2 {
+    margin: 0 auto;
+    font-size: 150%;
+    max-width: 90%;
+    text-align: justify;
+}
+#justify table {
+    margin: 0 auto;}
+#img1{
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: justify;
+}
+#justify h1 {
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 100%;
+    text-align: justify;}#justify4 h1 {
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 100%;
+    text-align: justify;
+}
+#justify p {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: left;
+    font-size: 100%;
+}
+@media screen and (max-width: 600px) {
+    img {  width: 100%;    }
+}
